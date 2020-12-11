@@ -1,0 +1,51 @@
+div{
+	font-family: 'Arial';
+	background-color: #a8cf45;
+	margin: 70px 70px;
+	text-align: center;
+	font-weight: bolder;
+	padding: 15px 30px;
+	width: 80px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.arrow{
+	-webkit-transform: translateX(0);/* para que no se desplace */
+}
+.arrow:before{
+	content: '';
+	/* hago el triangulo dandole 0 px al estremo inverso del triangulo */
+	border-style: solid;
+	border-width: 	35px
+						35px
+						35px
+						0px;
+	/* pongo transparente todos menos el extremo del triangulo */
+	border-color:	transparent
+						#a8cf45
+						transparent
+						transparent;
+
+	position: absolute;
+	left: 0px;
+	top: 15%;
+}
+
+.arrow:hover:before{
+	-webkit-animation: 1.3s turnBack infinite;
+}
+
+@-webkit-keyframes turnBack {
+	40% {
+		-webkit-transform: rotate(0deg);
+	}
+	70% {
+		-webkit-transform: rotate(180deg);
+		left:-50px;
+	}
+	100% {
+		-webkit-transform: rotate(180deg);
+		left: 0;
+	}
+}

@@ -1,0 +1,48 @@
+div {
+   font-family: 'Arial';
+   background-color: #11ab1c;
+   margin: 15px 2px;
+   padding: 5px 40px;
+   text-align: center;
+   font-weight: bolder;
+   width: 80px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.vibrador:hover{
+   -webkit-animation: 1s vibrador1 infinite;
+}
+
+@-webkit-keyframes vibrador{
+   10%, 60%{
+      -webkit-transform: translate(-10px, 15px);
+   }
+   20%, 70%{
+      -webkit-transform: translate(10px, -15px);
+   }
+   30%, 80%{
+      -webkit-transform: translate(10px, 15px);
+   }
+   40%, 90%{
+      -webkit-transform: translate(-10px, -15px);
+   }
+   50%, 100%{
+      -webkit-transform: translate(15px, 10px);
+   }
+}
+
+@-webkit-keyframes vibrador1{
+   5%, 25%, 45%, 65%, 85%{
+      -webkit-transform: translateY(-10px);
+   }
+   15%, 35%, 55%, 75%, 95%{
+      -webkit-transform: translateY(10px);
+   }
+   10%, 30%, 50%, 70%, 90%{
+      -webkit-transform: translateX(-10px);
+   }
+   20%, 40%, 60%, 80%{
+      -webkit-transform: translateX(10px);
+   }
+}

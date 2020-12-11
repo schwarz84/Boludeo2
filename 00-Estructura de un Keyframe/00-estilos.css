@@ -1,0 +1,40 @@
+div {
+   font-family: 'Arial';
+   background-color: #4bcf55;
+   text-align: center;
+   font-weight: bolder;
+   position: relative;
+   width: 120px;
+   height: 50px;
+   margin: 30px 0 0 10px;
+}
+
+p {
+   padding-top: 15px;
+}
+
+.caja:hover {
+   -webkit-animation: 5s cambia_color 1;
+}
+
+@-webkit-keyframes cambia_color {
+   25%, 75%{
+      background: #aa331b;
+      border-radius: 15px;
+   }
+
+   50% {
+      background: #1e29c6;
+      height: 200px;
+   }
+}
+/*
+      animation-name:
+      indica el nombre que tendra el Keyframe que se añadira a continuacion.
+      animation-duration:
+      tiempo total de la animacion.
+      animation-interation-count:
+      veces que se repetira. puede ser infinite
+      animation-delay
+      retardo con el que comenzara la animacion.
+ */

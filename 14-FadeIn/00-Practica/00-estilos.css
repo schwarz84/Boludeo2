@@ -1,0 +1,129 @@
+div.fade {
+   font-family: 'Arial';
+   background-color: #11ab1c;
+   margin: 15px 10px;
+   position: relative;
+   padding: 5px 40px;
+   text-align: center;
+   font-weight: bolder;
+   width: 80px;
+   height: 70px;
+   display: inline-block;
+   vertical-align: middle;
+   overflow: hidden;
+}
+
+.fade {
+   -webkit-animation: 1s fade 1;
+}
+
+@-webkit-keyframes fade {
+   0% {
+      opacity: 0;
+   }
+}
+
+.tapa {
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   position: absolute;
+   background: white;
+}
+
+.arriba {
+   top: -80px;
+   -webkit-animation: 1s arriba 1;
+}
+
+@-webkit-keyframes arriba {
+   0% {
+      top: 0;
+   }
+}
+
+.arriba_der {
+   top: -80px;
+   left: 160px;
+   -webkit-animation: 1s arriba_der 1;
+}
+
+@-webkit-keyframes arriba_der {
+   0% {
+      top: 0;
+      left: 0;
+   }
+}
+
+.derecha {
+   left: 160px;
+   -webkit-animation: 1s derecha 1;
+}
+
+@-webkit-keyframes derecha {
+   0% {
+      left: 0;
+   }
+}
+
+.abajo_der {
+   top: 80px;
+   left: 160px;
+   -webkit-animation: 1s abajo_der 1;
+}
+
+@-webkit-keyframes abajo_der {
+   0% {
+      top: 0;
+      left: 0;
+   }
+}
+
+.abajo {
+   top: 80px;
+   -webkit-animation: 1s abajo 1;
+}
+
+@-webkit-keyframes abajo {
+   0% {
+      top: 0px;
+   }
+}
+
+.abajo_izq {
+   top: 80px;
+   left: -160px;
+   -webkit-animation: 1s abajo_izq 1;
+}
+
+@-webkit-keyframes abajo_izq {
+   0% {
+      top: 0px;
+      left: 0px;
+   }
+}
+
+.izquierda {
+   left: -160px;
+   -webkit-animation: 1s izquierda 1;
+}
+
+@-webkit-keyframes izquierda {
+   0% {
+      left: 0px;
+   }
+}
+
+.arriba_izq {
+   top: -80px;
+   left: -160px;
+   -webkit-animation: 1s arriba_izq 1;
+}
+
+@-webkit-keyframes arriba_izq {
+   0% {
+      top: 0px;
+      left: 0px;
+   }
+}

@@ -1,0 +1,37 @@
+div{
+   font-family: 'Arial';
+   background-color: #11ab1c;
+   margin: 15px 2px;
+   padding: 5px 40px;
+   text-align: center;
+   font-weight: bolder;
+   width: 80px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.balanceo:hover{
+   -webkit-animation: 1.5s balanceo 1;
+   -webkit-transform-origin: top center;
+}
+
+@-webkit-keyframes balanceo{
+   20%{
+      -webkit-transform: rotate(20deg);
+   }
+   40%{
+      -webkit-transform: rotate(-15deg);
+   }
+   60%{
+      -webkit-transform: rotate(10deg);
+   }
+   75%{
+      -webkit-transform: rotate(-5deg);
+   }
+   90%{
+      -webkit-transform: rotate(3deg);
+   }
+   95%{
+      -webkit-transform: rotate(-1deg);
+   }
+}

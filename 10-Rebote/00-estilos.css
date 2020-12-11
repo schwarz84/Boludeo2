@@ -1,0 +1,35 @@
+div {
+   font-family: 'Arial';
+   background-color: #11ab1c;
+   margin: 50px 2px;
+   padding: 5px 40px;
+   text-align: center;
+   font-weight: bolder;
+   width: 80px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.rebote {
+   -webkit-animation: 1.5s rebote 1;
+}
+
+@-webkit-keyframes rebote {
+   10%, 55% {
+      -webkit-transform:   scale(0.8, 1.5)
+                           translateY(0%);
+   }
+   20% {
+      -webkit-transform: translateY(-100%);
+   }
+   50%, 95% {
+      -webkit-transform:   translateY(0%);
+   }
+   51% {
+      -webkit-transform:   scale(1.5, 0.8)
+                           translateY(0%);
+   }
+   70% {
+      -webkit-transform: translateY(-70%);
+   }
+}

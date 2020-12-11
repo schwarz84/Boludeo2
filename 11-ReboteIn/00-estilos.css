@@ -1,0 +1,29 @@
+div {
+   font-family: 'Arial';
+   background-color: #11ab1c;
+   margin: 15px 2px;
+   padding: 5px 40px;
+   text-align: center;
+   font-weight: bolder;
+   width: 80px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.rebotein {
+   -webkit-animation: 1s rebotein 1;
+}
+
+@-webkit-keyframes rebotein {
+   0% {
+      opacity: 0;
+      -webkit-transform: scale(0.3);
+   }
+   50% {
+      opacity: 1;
+       -webkit-transform: scale(1.1);
+   }
+   70% {
+      -webkit-transform: scale(0.9);
+   }
+}
